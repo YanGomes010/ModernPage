@@ -1,0 +1,119 @@
+:root {
+    --var_background-image: url("./images/hamburger-menu.png");
+    --bs-navbar-color: #fff;
+    --bs-background-close-img: url("./images/cross-menu.png");
+    --bs-ofcanvas-width: 100%;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(180deg, rgba(26, 0, 38, 1) 0%, rgba(19, 1, 28, 1) 100%);
+    background-color: rgb(26, 0, 38);
+}
+
+
+/* HEADER */
+
+.offcanvas {
+    background-color: #1a0026c4;
+}
+
+.nav-link {
+    color: var(--bs-navbar-color)
+}
+
+.navbar-toggle {
+    border: none;
+    transition: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: var(--var_background-image);
+}
+
+.container-body {
+    max-width: 1320px;
+    height: 97vh;
+    background-image: url("./images/bg-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(40, 12, 53);
+    background: linear-gradient(90deg, rgba(40, 12, 53, 1) 0%, rgba(241, 3, 128, 1) 100%);
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+
+/* MENU */
+
+.btn-close {
+    background: var(--bs-background-close-img);
+    opacity: 1;
+    right: 70px;
+    top: 45px;
+}
+
+
+/* MAIN */
+
+
+/* infos */
+
+.mainInfos {
+    height: 85vh;
+}
+
+#infoh1 {
+    font-size: 83px;
+}
+
+#infoSpan {
+    font-size: 20px;
+    color: #A599AB;
+}
+
+#btn0 {
+    width: 180px;
+}
+
+
+/* cards */
+
+.card {
+    background-color: transparent;
+}
+
+.mainCards {
+    right: 50px;
+    bottom: 50px;
+}
+
+.imgCard {
+    width: 180px;
+    height: 205px;
+}
+
+#img0 {
+    top: -280px;
+    left: 0;
+    right: 0;
+}
+
+#img1 {
+    top: 0;
+    left: 0;
+}
+
+#img2 {
+    bottom: 0;
+    right: 0;
+}
