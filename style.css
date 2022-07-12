@@ -11,6 +11,10 @@ body {
     background-color: rgb(26, 0, 38);
 }
 
+header {
+    height: 80px;
+}
+
 
 /* HEADER */
 
@@ -33,6 +37,7 @@ body {
 }
 
 .container-body {
+    min-width: 360px;
     max-width: 1320px;
     height: 97vh;
     background-image: url("./images/bg-image.png");
@@ -65,11 +70,16 @@ body {
 
 /* MAIN */
 
+main {
+    height: 100vh;
+}
+
 
 /* infos */
 
-.mainInfos {
-    height: 85vh;
+.mainInfo {
+    margin-top: 100px;
+    height: 100vh;
 }
 
 #infoh1 {
@@ -89,12 +99,17 @@ body {
 /* cards */
 
 .card {
+    width: 100%;
+    height: 369px;
     background-color: transparent;
+    border: none;
 }
 
 .mainCards {
-    right: 50px;
-    bottom: 50px;
+    width: 50%;
+    height: 50%;
+    right: 5px;
+    bottom: 5px;
 }
 
 .imgCard {
@@ -103,7 +118,9 @@ body {
 }
 
 #img0 {
-    top: -280px;
+    width: 600px;
+    height: 660px;
+    top: -260px;
     left: 0;
     right: 0;
 }

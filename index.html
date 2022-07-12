@@ -14,17 +14,78 @@
 
     <title>Empresa</title>
     <style>
-        @media screen and (max-width:920px) {
-            .container-xxl {
-                background-position: center;
+        @media screen and (max-width:1230px) {
+            #img0 {
+                width: 570px;
+                height: 600px;
+            }
+            #img2 {
+                bottom: 0;
+                right: 0;
+            }
+        }
+        
+        @media screen and (max-width:1020px) {
+            #img0 {
+                display: none;
+            }
+            .mainBox {
+                flex-direction: column;
+            }
+            .mainCards {
+                width: 75%;
+                margin: auto;
+                height: 215px;
+                left: 20px;
+                bottom: 0;
+            }
+            .card {
+                height: 210px;
+            }
+            #img1 {
+                top: 0;
+                bottom: 0;
+            }
+            #img2 {
+                top: 0;
+                bottom: 0;
+            }
+        }
+        
+        @media screen and (max-width:768px) {
+            .container-body {
+                background-image: none;
+                background-color: rgb(26, 0, 38);
+            }
+            .mainCards {
+                width: 75%;
+                bottom: -100px;
+            }
+        }
+        
+        @media screen and (max-width:480px) {
+            .mainCards {
+                bottom: 30px;
+                width: 100%;
+            }
+            #img1 {
+                width: 150;
+                height: 175;
+            }
+            #img1 {
+                width: 150;
+                height: 175;
+            }
+            #infoh1 {
+                font-size: 63px;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="container-xxl container-body w-100">
-        <header class="w-100 mt-4">
+    <div class="container-xxl position-relative d-flex container-body w-100">
+        <header class="w-100 mt-4 position-absolute">
             <div class="container">
                 <nav>
                     <div class="headerBox d-flex justify-content-between align-items-center">
@@ -42,19 +103,19 @@
                                 <div class="offcanvas-body w-75 m-auto text-center d-flex justify-content-center align-items-center">
                                     <ul class="navbar-nav display-6 justify-content-end flex-grow-1 pe-3 ">
                                         <li class="nav-item">
-                                            <a class="nav-link active text-light" aria-current="page" href="#">ABOUT</a>
+                                            <a class="nav-link active text-light" aria-current="page">ABOUT</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link text-light" href="#">ROADMAP</a>
+                                            <a class="nav-link text-light">ROADMAP</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link text-light" href="#">TOKENOMICS</a>
+                                            <a class="nav-link text-light">TOKENOMICS</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link text-light" href="#">TEAM</a>
+                                            <a class="nav-link text-light">TEAM</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link text-light" href="#">WHITEPAPER</a>
+                                            <a class="nav-link text-light">WHITEPAPER</a>
                                         </li>
                                 </div>
                             </div>
@@ -62,33 +123,29 @@
                     </div>
                 </nav>
             </div>
-            <main class="w-50 h-100">
-                <div class="container-xxl">
-                    <div class="mainBox d-flex positivon-relative">
-                        <div class="mainInfo mt-5">
-                            <div class="boxInfos d-flex flex-column mt-5">
-                                <span id="infoh1" class="text-light mb-3">HUMANOID NFT.</span>
-                                <span id="infoSpan" class="mb-5">The modern human Creation of multiverse</span>
-                                <img id="btn0" class="mt-5" src="./images/cta-button.png" alt="">
-                            </div>
+        </header>
+        <main class="w-100 ">
+            <div class="container h-100 w-100">
+                <div class="mainBox d-flex h-100 w-100 positivon-relative">
+                    <div class="mainInfo">
+                        <div class="boxInfos d-flex flex-column mt-5">
+                            <span id="infoh1" class="text-light mb-3">HUMANOID NFT.</span>
+                            <span id="infoSpan" class="mb-5">The modern human Creation of multiverse</span>
+                            <img id="btn0" class="mt-5" src="./images/cta-button.png" alt="">
                         </div>
-                        <div class="mainCards position-absolute w-50 h-50">
-                            <div class="card w-75 h-100 position-relative">
-                                <img id="img0" class="position-absolute" src="./images/Group 1.png" alt="">
-                                <img id="img1" class="imgCard position-absolute" src="./images/card-1.png" alt="">
-                                <img id="img2" class="imgCard position-absolute" src="./images/card-2.png" alt="">
-                            </div>
+                    </div>
+                    <div class="mainCards position-absolute">
+                        <div class="card  position-relative">
+                            <img id="img0" class="position-absolute" src="./images/Group 1.png" alt="">
+                            <img id="img1" class="imgCard position-absolute" src="./images/card-1.png" alt="">
+                            <img id="img2" class="imgCard position-absolute" src="./images/card-2.png" alt="">
                         </div>
                     </div>
                 </div>
-            </main>
+            </div>
+        </main>
     </div>
-    </div>
-    </header>
-
-
     <script src="./script.js"></script>
-    <script src="https://kit.fontawesome.com/8cd7492fbf.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
